@@ -8,6 +8,10 @@ Game::Game()
 
 void Game::Reset()
 {
+	youWin = false;
+	youLose = false;
+	bricks.clear();
+
 	Console::SetWindowSize(WINDOW_WIDTH, WINDOW_HEIGHT);
 	Console::CursorVisible(false);
 	paddle.width = 12;
